@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
 .home {
   height: 100%;
   padding-top: 40vh;
@@ -5,13 +8,14 @@
   align-items: center;
   text-align: center;
   background: 
-    linear-gradient(
-      to right,
-      rgba($primary-color, 0.9),
-      rgba($primary-color, 0.3)
-    ),
-    url('../img/model-1.jpg') center top;
-  background-size: cover;
+  //   linear-gradient(
+  //     to right,
+  //     rgba($primary-color, 0.9),
+  //     rgba($primary-color, 0.3)
+  //   ),
+    url('../img/model-0.jpg') center;
+  background-size: contain;
+ 
 
   &__name {
     font-size: 5rem;
@@ -22,6 +26,10 @@
     &--last {
       color: $secondary-color;
       font-weight: 700;
+    }
+
+    &-special--letter {
+      font-family: 'Lobster', cursive;
     }
   }
 }

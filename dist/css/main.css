@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -13,9 +14,8 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/model-1.jpg") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg") center top;
-  background-size: cover;
+  background: url("../img/model-0.jpg") center;
+  background-size: contain;
 }
 
 .home__name {
@@ -26,8 +26,12 @@
 }
 
 .home__name--last {
-  color: #ff652f;
+  color: #d07d13;
   font-weight: 700;
+}
+
+.home__name-special--letter {
+  font-family: 'Lobster', cursive;
 }
 
 .menu-btn {
@@ -38,8 +42,8 @@
   height: 20px;
   width: 28px;
   cursor: pointer;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .menu-btn__burger {
@@ -49,8 +53,8 @@
   width: 28px;
   height: 3px;
   background: #fff;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .menu-btn__burger::before {
@@ -60,8 +64,8 @@
   width: 28px;
   height: 3px;
   background: #fff;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .menu-btn__burger::after {
@@ -71,8 +75,8 @@
   width: 20px;
   height: 3px;
   background: #fff;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .menu-btn__burger.open {
@@ -126,8 +130,8 @@
   padding-right: 1rem;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .nav .menu-nav.open {
@@ -138,8 +142,8 @@
 .nav .menu-nav__item {
   -webkit-transform: translateX(100vw);
           transform: translateX(100vw);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .nav .menu-nav__item.open {
@@ -148,7 +152,7 @@
 }
 
 .nav .menu-nav__item.active > a {
-  color: #ff652f;
+  color: #d07d13;
 }
 
 .nav .menu-nav__link {
@@ -157,12 +161,12 @@
   text-transform: uppercase;
   padding: 2rem 0;
   font-weight: 300;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .nav .menu-nav__link:hover {
-  color: #ff652f;
+  color: #d07d13;
 }
 
 .menu-nav__item:nth-child(1) {
@@ -236,7 +240,7 @@
 .about .jobs__job {
   background: #414141;
   padding: 0.5rem;
-  border-bottom: 5px solid #ff652f;
+  border-bottom: 5px solid #d07d13;
 }
 
 .about .jobs__job h2, .about .jobs__job h3 {
@@ -267,7 +271,7 @@
 }
 
 .projects__bio-image {
-  height: 30vh;
+  height: 50vh;
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/model-1.jpg") center top;
   background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg") center top;
@@ -293,7 +297,7 @@
 }
 
 .projects__items {
-  width: 60vw;
+  width: 70vw;
   margin: 2rem auto 0 auto;
   display: -ms-grid;
   display: grid;
@@ -304,7 +308,7 @@
 
 .projects__item {
   position: relative;
-  border-bottom: 5px solid #ff652f;
+  border-bottom: 5px solid #d07d13;
   overflow: hidden;
   cursor: pointer;
 }
@@ -320,10 +324,10 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: #ff652f;
+  background: #d07d13;
   opacity: 0;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .projects__item:hover::after {
@@ -349,13 +353,14 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  font-size: 0.85rem;
 }
 
 .projects__btn {
   opacity: 0;
   color: #000;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .projects__btn:hover {
@@ -444,8 +449,8 @@
     height: 40vh;
   }
   .projects__items {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
   .projects .text-secondary {
     font-size: 3rem;
@@ -477,7 +482,7 @@ body {
   background: #272727;
   color: #fff;
   height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
 }
 
@@ -491,7 +496,7 @@ a {
 }
 
 .text-secondary {
-  color: #ff652f;
+  color: #d07d13;
 }
 
 header {
@@ -514,12 +519,12 @@ main .social-icons {
 
 main .social-icons a {
   padding: 0.4rem;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 main .social-icons a:hover {
-  color: #ff652f;
+  color: #d07d13;
 }
 
 footer {
